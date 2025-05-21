@@ -6,4 +6,4 @@ requires = [
     "numpy>=1.19.0"    # Needed for your C extensions (adjust version as needed)
 ]
 build-backend = "setuptools.build_meta"
-backend-path = ["."]
+#backend-path = ["."]
