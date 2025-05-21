@@ -1,9 +1,9 @@
-# pyproject.toml (place this in the root of your pyekfmm fork/clone)
+# pyproject.toml (in the root of your pyekfmm fork)
 [build-system]
 requires = [
-    "setuptools>=42",
-    "wheel",
-    "numpy>=1.19.0"  # Or a version compatible with pyekfmm and your Python version
+    "setuptools>=42",  # Ensures setuptools itself is installed
+    "wheel",           # Required for building wheels
+    "numpy>=1.19.0"    # Needed for your C extensions (adjust version as needed)
 ]
 build-backend = "setuptools.build_meta"
-backend-path = ["."] # Default, indicates setup.py and build backend are in the project root
+backend-path = ["."]
